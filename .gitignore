@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv*/
+venv/
+env/
+
+# Simulation outputs and logs
+benchmark_results*/
+benchmark_pilot*/
+quick_test_results/
+results/
+*.log
+benchmark_baseline.json
+*.mp4
+*.gif
+*.zip
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backups
+*.bak*
+*~

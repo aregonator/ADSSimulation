@@ -1,0 +1,38 @@
+{
+  "_comment": "Default simulation config. Pass with: python run_simulation.py --config config.json",
+  "_comment_precedence": "Explicit CLI flags always override values set here.",
+  "_comment_difficulty_scaling": "This file sets resource_density, event_frequency, event_severity, and event_warning_cycles explicitly below. Those four values are pinned: they apply as written regardless of the 'difficulty' field or any '--difficulty' CLI flag, because an explicit --config value always overrides the difficulty-derived default for the same field. '--config config.json --difficulty 60' therefore scales drain, regeneration, and metabolism to difficulty 60, but resource_density/event_frequency/event_severity/event_warning_cycles stay at the values pinned here, not at their difficulty-60 schedule values. Every other field below is either difficulty-independent (grid size, agent count, terrain_variety, max_cycles, ...) or a fixed default (visibility_radius, seed, ...).",
+
+  "difficulty": 25,
+
+  "governments": ["anarchy", "democracy", "ads"],
+
+  "scenario": null,
+
+  "seed": 42,
+
+  "grid_rows": 17,
+  "grid_cols": 17,
+
+  "num_agents": 75,
+
+  "initial_health": 1.0,
+
+  "resource_density": 0.77,
+
+  "terrain_variety": 0.29,
+
+  "max_steps_per_cycle": 1,
+
+  "visibility_radius": 5,
+
+  "event_frequency": 0.035,
+  "event_severity": 0.89,
+  "event_warning_cycles": 3,
+
+  "max_cycles": 150,
+
+  "record_every": 1,
+
+  "verbose": false
+}

@@ -1,0 +1,13 @@
+# Decision-Making at Scale — Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# All other imports (os, sys, json, csv, math, random, threading, logging,
+# dataclasses, typing, concurrent.futures, argparse, uuid, statistics, …)
+# are part of the Python standard library and need no installation.
+
+matplotlib>=3.7.0   # grid/timeline/comparison visualizations and benchmark plots
+numpy>=1.24.0       # array operations used in visualizer and benchmark CI calculations
+
+# Optional: only needed for run_simulation.py --save-video.
+# imageio>=2.31.0     # writes the GIF fallback when ffmpeg is unavailable
+# imageio[ffmpeg]>=2.31.0  # writes MP4 (preferred) when ffmpeg is available
