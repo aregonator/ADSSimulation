@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23092993.svg)](https://doi.org/10.5281/zenodo.23092993)
+
 # ADS Simulation
 
 Simulation code accompanying a paper currently under review. It generates the
